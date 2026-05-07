@@ -7,6 +7,23 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+	server: {
+		port: 5173,
+		host: '127.0.0.1',
+		hmr: {
+			// Use the dev subdomain for HMR so it matches your Caddyfile
+			host: 'dev.wordle-pro.dev',
+			clientPort: 443,
+			protocol: 'wss',
+		},
+	},
+	preview: {
+		port: 4173,
+		strictPort: true,
+		host: '127.0.0.1',
+		allowedHosts: ['wordle-pro.dev'],
+		// No HMR needed for preview since it's a static build
+	},  
   plugins: [
 		tanstackRouter({
 			target: 'react',
