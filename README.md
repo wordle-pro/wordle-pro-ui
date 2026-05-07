@@ -1,1 +1,1 @@
-# wordle-pro
+# wordle-pro-ui
