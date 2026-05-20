@@ -4,15 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite --mode production"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
     "@tailwindcss/vite": "^4.2.2",
     "@tanstack/react-form": "^1.28.6",
+    "@tanstack/react-query": "^5.100.10",
     "@tanstack/react-router": "^1.167.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
