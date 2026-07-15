@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite --mode development",
+    "clean": "rm -rf dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite --mode production"
+    "preview": "vite --mode production",
+    "postbuild": "cp ./dist/index.html ./dist/404.html"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",

@@ -13,5 +13,4 @@ const Hello = () => {
 
 export const Route = createFileRoute('/')({
   component: Hello,
-})
-
+});
