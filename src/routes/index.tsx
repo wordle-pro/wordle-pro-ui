@@ -7,7 +7,7 @@ const Hello = () => {
     data
   } = useHello('tester');
   return (
-    <div>Hello {data?.message}!</div>
+    <div className="text-white">Hello {data?.message}!</div>
   );
 }
 

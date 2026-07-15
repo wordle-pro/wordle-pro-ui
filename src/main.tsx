@@ -9,7 +9,7 @@ import './index.css'
 import '@fontsource-variable/inter';
 
 // Create a new router instance
-const router = createRouter({ routeTree, basepath: '/wordle-pro' });
+const router = createRouter({ routeTree, basepath: '/wordle-pro-ui' });
 
 // Register the router instance for type safety
 declare module '@tanstack/react-router' {
