@@ -63,6 +63,7 @@ const Button = ({
 	const notActionable = isLoading || disabled;
 
 	const className = cn(buttonVariants({variant, size}), notActionable && 'pointer-events-none');
+
 	return (
 		<button 
 			type={type}

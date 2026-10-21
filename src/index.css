@@ -16,3 +16,24 @@
     cursor: pointer;
   }
 }
+
+/* ===================================================
+   Universal Autocomplete Stylesheet Reset
+   =================================================== */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  /* 1. Freeze the background state indefinitely to block the forced white box */
+  transition: background-color 999999s ease-in-out 0s;
+  
+  /* 2. Force the text color to stay white against your dark background */
+  -webkit-text-fill-color: #ffffff !important;
+  
+  /* 3. Explicitly force system-rendered dropdown menus to dark mode */
+  color-scheme: dark !important;
+  
+  /* 4. Keeps your custom text cursor color visible */
+  caret-color: #ffffff;
+}
