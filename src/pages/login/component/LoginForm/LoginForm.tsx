@@ -22,10 +22,8 @@ const LoginForm = ({ form }: LoginFormProp) => {
 		<Card>
 			<form
 				onSubmit={(e) => {
-					console.log('submit')
         	e.preventDefault();
         	e.stopPropagation();
-					console.log('submitting')
         	handleSubmit();
       	}}				
 			>
@@ -33,19 +31,16 @@ const LoginForm = ({ form }: LoginFormProp) => {
 			<Field
         name="email"
         children={(field) => (					        
-  					<TextInput 
-							type="email" 
-							name="email" 
-							label="Email" 
-							placeholder="Enter your email"
-							value={field.state.value}							
-							onChange={(e) => {
-									field.handleChange(e.target.value);
-								}
-							}
-							
-						/>
-          
+					<TextInput 
+						type="email" 
+						name="email" 
+						label="Email" 
+						placeholder="Enter your email"
+						value={field.state.value}							
+						onChange={(e) => {
+							field.handleChange(e.target.value);
+						}}							
+					/>          
         )}
       />
 			<Field
@@ -61,9 +56,8 @@ const LoginForm = ({ form }: LoginFormProp) => {
 							onRightIconClick={() => setHidePassword(!hidePassword)}
 							value={field.state.value}							
 							onChange={(e) => {
-									field.handleChange(e.target.value);
-								}
-							}							
+								field.handleChange(e.target.value);
+							}}							
 						/>
 				)} />				
 
